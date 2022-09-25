@@ -5,7 +5,7 @@ spring:
         password: C@$R@k2020
         driverClassName: com.mysql.cj.jdbc.Driver
     jpa:
-        hibernate.ddl-auto: create
+        hibernate.ddl-auto: none
         show-sql: true
         generate-ddl: false
   # Producer properties
