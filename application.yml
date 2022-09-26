@@ -45,10 +45,10 @@ cloud:
             secretKey: fcmvvq1hcDoSWmHSem6VRc6GdHw2081lUawajH
     gateway:
         routes:
-	    - id: user-service
-	    uri: lb://user-service
-	    predicates:
-	        - Path=/v1/user/**
+	- id: user-service
+	  uri: lb://user-service
+	  predicates:
+	   - Path=/v1/user/**
 
 application:
     bucket:
