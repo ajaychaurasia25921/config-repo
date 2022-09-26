@@ -35,6 +35,18 @@ auto:
 
 #AWS properties
 cloud:
+    gateway:
+        routes:
+        - id: catalog-service
+          uri: http://localhost:8081
+        - id: kart-service
+          uri: http://localhost:8082
+        - id: payment-service
+          uri: http://localhost:8083
+        - id: order-service
+          uri: http://localhost:8084
+        - id: user-service
+          uri: http://localhost:8085
     aws:
         region:
             static: ap-south-1
