@@ -38,23 +38,23 @@ cloud:
     gateway:
         routes:
         - id: catalog-service
-          uri: http://catalog-service/
+          uri: lb://catalog-service/
           predicates:
           - Path=/v1/catalog/**
         - id: kart-service
-          uri: http://kart-service/
+          uri: lb://kart-service/
           predicates:
           - Path=/v1/kart/**
         - id: payment-service
-          uri: http://payment-service/
+          uri: lb://payment-service/
           predicates:
           - Path=/v1/payment/**
         - id: order-service
-          uri: http://order-service/
+          uri: lb://order-service/
           predicates:
           - Path=/v1/order/**
         - id: user-service
-          uri: http://user-service/
+          uri: lb://user-service/
           predicates:
           - Path=/v1/user/**
     aws:
