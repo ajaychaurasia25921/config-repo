@@ -35,28 +35,6 @@ auto:
 
 #AWS properties
 cloud:
-    gateway:
-        routes:
-        - id: catalog-service
-          uri: lb://catalog-service/
-          predicates:
-          - Path=/v1/catalog/**
-        - id: kart-service
-          uri: lb://kart-service/
-          predicates:
-          - Path=/v1/kart/**
-        - id: payment-service
-          uri: lb://payment-service/
-          predicates:
-          - Path=/v1/payment/**
-        - id: order-service
-          uri: lb://order-service/
-          predicates:
-          - Path=/v1/order/**
-        - id: user-service
-          uri: http://localhost:8085/
-          predicates:
-          - Path=/v1/user/**
     aws:
         region:
             static: ap-south-1
@@ -84,5 +62,4 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka
   instance:
-    preferIpAddress: false
-    hostname: localhost
+    preferIpAddress: true
