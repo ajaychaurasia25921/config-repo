@@ -37,16 +37,16 @@ auto:
 cloud:
     aws:
         region:
-            static: ap-south-1
+            static: us-east-1
         stack:
             auto: false
         credentials:
-            accessKey: AKIA32CIHYHAOT2KHV
-            secretKey: fcmvvq1hcDoSWmHSem6VRc6GdHw2081lUawajH
+            accessKey: AKIAYMMFC5FDXJR2R5FO
+            secretKey: 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
 
 application:
     bucket:
-        name: techgeeknextbucket
+        name: edwiki-webserver-config
 
 logging:
     level:
