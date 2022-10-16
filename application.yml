@@ -6,7 +6,7 @@ spring:
         password: Ascorp@123
         driverClassName: com.mysql.cj.jdbc.Driver
     jpa:
-        hibernate.ddl-auto: none
+        hibernate.ddl-auto: create
         show-sql: true
         generate-ddl: false
   # Producer properties
