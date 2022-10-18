@@ -2,8 +2,8 @@ spring:
     datasource:
         url: jdbc:mysql://localhost:3306/edwiki?createDatabaseIfNotExist=true
         username: root
-        #password: C@$R@k2020
-        password: Ascorp@123
+        password: C@$R@k2020
+        #password: Ascorp@123
         driverClassName: com.mysql.cj.jdbc.Driver
     jpa:
         hibernate.ddl-auto: update
