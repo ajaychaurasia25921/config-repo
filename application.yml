@@ -11,8 +11,8 @@ spring:
         generate-ddl: false
   # Producer properties
     kafka:
+      bootstrap-servers: 127:0:0:1:9092
       producer:
-        bootstrap-servers: 127:0:0:1:9092
         key-serializer:
           org:apache:
             kafka:
@@ -42,8 +42,8 @@ cloud:
         stack:
             auto: false
         credentials:
-            accessKey: AKIAYMMFC5FDXJR2R5FO
-            secretKey: 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
+            accessKey: AKIAYMMFC5FDUATWA6PN
+            secretKey: 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
 
 application:
     bucket:
