@@ -10,19 +10,8 @@ spring:
         generate-ddl: false
   # Producer properties
     kafka:
-      producer:
-        bootstrap-servers: 127:0:0:1:9092
-        key-serializer:
-          org:apache:
-            kafka:
-              common:
-                serialization: StringSerializer
-        value-serializer:
-          org:apache:
-            kafka:
-              common:
-                serialization: StringSerializer
-        group-id: group_id
+      bootstrap-servers: 127:0:0:1:9092
+      group-id: group_id
 topic:
   name:
     producer: topico.comando.teste
