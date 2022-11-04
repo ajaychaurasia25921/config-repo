@@ -55,16 +55,5 @@ logging:
             amazonaws:
                 util:
                     EC2MetadataUtils: error
- 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    enabled: true
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
-  instance:
-    instanceId: app.edwiki.com
-    prefer-ip-address: true
 
 baseUrl: http://localhost:5555/v1
