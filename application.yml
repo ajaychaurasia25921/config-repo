@@ -26,8 +26,8 @@ spring:
         group-id: group_id
 topic:
   name:
-    producer: topico.comando.teste
-    consumer: topico.teste
+    producer: testTopic
+    consumer: testTopic
 # Common Kafka Properties
 auto:
   create:
