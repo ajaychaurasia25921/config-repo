@@ -63,8 +63,7 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
-    appname: yoo
-    instanceId: ${spring.application.name}
+    instanceId: app.edwiki.com
     prefer-ip-address: true
 
 baseUrl: http://localhost:5555/v1
