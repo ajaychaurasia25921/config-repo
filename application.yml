@@ -63,6 +63,6 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
   instance:
-    hostName: yahoo
+    hostname: yahoo
 
 baseUrl: http://localhost:5555/v1
